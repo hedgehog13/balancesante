@@ -1,0 +1,95 @@
+.image-card {
+ height: 350px;
+  border-radius: 15px; /* Rounded corners */
+  background-size: cover; /* Ensures the background image covers the card */
+  background-position: center; /* Centers the background image */
+  position: relative; /* Necessary for overlay effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card-title{
+  font-size: 2.5em;
+    color: #fff;
+    line-height: 0.8;
+    text-align: left;
+}
+
+
+
+.image-card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.card-body {
+  transition: opacity 0.3s ease; /* Transition for the text opacity */
+}
+
+.image-card:hover .card-body {
+  opacity: 0.8; /* Slightly fade the text on hover */
+}
+
+
+
+
+
+
+
+
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Slight dark overlay */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s ease;
+  z-index: 2; /* Ensure overlay is on top */
+}
+.image-title {
+  font-family: "Rouge Script", cursive;
+  color: #fff;
+  font-size: 2.5em;
+  transition: transform 0.2s ease, font-size 0.3s ease;
+}
+
+/*
+.image-description {
+  transition: transform 0.1s ease, font-size 0.3s ease;
+}
+.image-card:hover .image-title {
+  transform: scale(1.1); /* Scale the title slightly larger 
+  font-size: 1.2rem; /* Increase the font size 
+}
+
+
+.image-title {
+  font-family: "Rouge Script", cursive;
+  color: #fff;
+    font-size: 2.5em;
+  transition: transform 0.2s ease, font-size 0.3s ease;
+}
+
+.image-description {
+  font-size: 1rem;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+*/

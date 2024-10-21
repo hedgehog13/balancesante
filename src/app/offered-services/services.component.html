@@ -1,0 +1,17 @@
+<section class="p-5 text-center" id="services">
+  <div class="container">
+    <h2 class="">{{ "services.title" | translate }}</h2>
+    <hr class="mx-auto" style="width: 50%;"/>
+    <div class="row justify-content-center">
+      <div class="col-md-4" *ngFor="let service of services$ | async">
+        <div class="service-card">
+            <img [src]="'assets/images/services/' + service.image + '.jpg'" alt="{{ service.name }}" class="img-fluid" />
+            <div class="card-body">
+              <h3>{{ service.name }}</h3>
+              <p>{{ service.description }}</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

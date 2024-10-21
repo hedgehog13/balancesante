@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+  height: 100%; /* Ensure the body takes full height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+body {
+ 
+  font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+
+  font-weight: 300;
+  background-color: #ebe8e3;
+}
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  max-width: 80px;
+  border-width: 1px;
+  border-color: #04bb49;
+  margin-top: 0;
+}
+a {
+  color: #04bb49;
+
+  transition: all 0.2s;
+}
+a:hover {
+  color: #04bb49;
+}
+h1,
+h2 {
+  font-family: "Rouge Script", cursive;
+}
+h2 {
+  font-size: 4em;
+  color: #04bb49;
+  padding-top: 1em;
+}
+
+h3,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  color: #04bb49;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+.section {
+  padding: 2em 0;
+}
+.section-heading {
+  margin-top: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  border-bottom: 1px solid #e0e0e0;
+  scroll-padding-top: 200px;
+}
+.bg-dark {
+  background-color: #e1c89a !important;
+}

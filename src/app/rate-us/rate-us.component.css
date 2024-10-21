@@ -1,0 +1,41 @@
+.rating-container {
+    text-align: center;
+  }
+  
+  .stars {
+    font-size: 80px; /* Larger stars */
+    cursor: pointer;
+  }
+  
+  .star {
+    color: lightgray; /* Default star color */
+  }
+  
+  .star.filled {
+    color: gold; /* Filled star color */
+  }
+  
+  .review-textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #04bb49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,6 @@
+<p>people-say works!</p>
+<div *ngFor="let review of reviews">
+    <h4>{{ review.reviewerName }}</h4>
+    <p>{{ review.comment }}</p>
+    <p>Rating: {{ review.starRating }}/5</p>
+  </div>

@@ -1,0 +1,17 @@
+<section id="rate-us " class="p-5 text-center bg-light">
+    <div class="rating-container">
+        <h2>Rate Us</h2>
+        <div class="stars">
+          <span *ngFor="let star of stars; let i = index" 
+                class="star" 
+                [class.filled]="i < rating" 
+                (click)="rate(i + 1)">
+            ★
+          </span>
+        </div>
+        <textarea [(ngModel)]="review" class="review-textarea" placeholder="Write your review here..."></textarea>
+        <button (click)="submitReview()" class="submit-button">Submit Review</button>
+      </div>
+
+      <!-- <app-reviews></app-reviews> -->
+</section>

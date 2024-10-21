@@ -1,0 +1,49 @@
+.section-bg {
+  background-image: url("../../assets/images/contact/rocks-stacked.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.section-bg {
+  display: flex;
+  align-items: center; /* Vertically center content within the section */
+}
+
+.content-body {
+  width: 100%; /* Ensure full width */
+}
+
+.contact-info {
+  text-align: left; /* Aligns text to the left */
+}
+
+.contact-info h6 {
+  color: #04bb49; /* Set the header color to green */
+  margin-bottom: 20px; /* Add some space below the header */
+  text-transform: uppercase;
+}
+
+.contact-info i {
+  color: #04bb49; /* Set icons to green */
+  margin-right: 10px; /* Add some space between icons and text */
+}
+
+.contact-info p, .contact-info a {
+  color: #ffffff; /* Set text color to white */
+}
+
+.contact-info a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color (white) */
+}
+
+.contact-info a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none
+}
+ .contact-info p:hover i{
+  color: #036a2a;
+ }
+
