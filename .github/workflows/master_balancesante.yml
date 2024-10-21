@@ -27,9 +27,11 @@ jobs:
           npm run build
           
 
-      - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
-
+   
+      - name: Archive production build
+        run: |
+          zip -r release.zip ./dist/massage-therapy # Change to your actual dist folder name
+          
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
