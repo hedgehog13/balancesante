@@ -1,7 +1,6 @@
-.footer{
- 
-    position: fixed; /* Keep the header fixed */
-  
-   
-  
-}
+
+ .poweredby {
+    font-size: 0.9em; /* Adjust font size */
+    color: #666;      /* Change text color */
+    margin: 0;       /* Remove margin */
+  }

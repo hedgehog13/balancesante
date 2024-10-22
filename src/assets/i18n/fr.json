@@ -1,51 +1,110 @@
 {
-    "navbar": {
-      "about": "À propos",
-      "services": "Services",
-      "promotions": "Promotions",
-      "contact": "Contactez-nous"
+  "navbar": {
+    "about": "À propos",
+    "services": "Nos Services",
+    "promotions": "Promotions",
+    "contact": "Contactez-nous"
+  },
+  "logo": {
+    "text": "Balance Santé"
+  },
+  "about": {
+    "title": "À propos",
+    "description": "L’intensité de notre vie quotidienne nous amène souvent certain inconfort. Le stress, manque d’énergie, tension, anxiété, douleur peuvent atteindre notre équilibre. La Massothérapie, qu’est basée sur plusieurs techniques de massage, vise la détente et la relaxation, tout en améliorant la récupération de l’énergie de notre corps. Le massage favorise un meilleur sommeil, circulation sanguine, diminue le stress, peut défaire les tensions et soulager la douleur, en aidant de trouver notre Balance Santé."
+  },
+  "about-over": {
+    "title": "Massage Balance Santé",
+    "description": "Prenez un moment pour vous détendre"
+  },
+  "services": {
+    "title": "Nos Services",
+    "list": [
+      {
+        "key": "service1",
+        "image": "swedish"
+      },
+      {
+        "key": "service2",
+        "image": "therapeutic"
+      },
+      {
+        "key": "service3",
+        "image": "athletic"
+      },
+      {
+        "key": "service4",
+        "image": "lymphatic"
+      },
+      {
+        "key": "service5",
+        "image": "pregnant"
+      }
+    ],
+
+    "service1": {
+      "name": "Massage Suédois",
+      "description": "Un massage détente. S’effectue de manière superficielle à profonde. Il provoque une circulation sanguine dans le tissu musculaire, détend les tensions, permet de retrouver la flexibilité musculaire et tendineuse."
     },
-    "about": {
-      "title": "À propos",
-      "description": "L’intensité de notre vie quotidienne nous amène souvent certain inconfort. Le stress, manque d’énergie, tension, anxiété, douleur peuvent atteindre notre équilibre. La Massothérapie, qu’est basée sur plusieurs techniques de massage, vise la détente et la relaxation, tout en améliorant la récupération de l’énergie de notre corps. Le massage favorise un meilleur sommeil, circulation sanguine, diminue le stress, peut défaire les tensions et soulager la douleur, en aidant de trouver notre Balance Santé."
+    "service2": {
+      "name": "Massage Thérapeutique",
+      "description": "S’effectue sur les tissus musculaires profonds. Aide à récupérer et à régénérer le fonctionnement physiologique de région du corps atteint par l’inflammation, blessures, entorse etc. Le massage thérapeutique peut également rééquilibrer les systèmes digestif et lymphatique, et apporte des bienfaits à tout l’organisme."
     },
-    "services": {
-      "title": "Nos Services",
-      "list":[
-        {
-            "image":"swedish",
-          "name": "Swedish Massage",
-          "description": "Intramuscular massage, that banishes tensions, relaxes and tones the body, helps to regain its natural balance. Your body will reawaken and come alive."
-        },
-        {
-            "image":"therapeutic",
-          "name": "Therapeutic Massage",
-          "description": "A deep massage, which targets muscle tension. Helps to recover and regenerate the physiological functioning of the area affected by inflammation, wounds, sprains etc. Therapeutic massage can also rebalance the digestive and lymphatic systems, and brings benefits to the entire body."
-        },
-        {
-            "image":"athletic",
-          "name": "Athletic Massage",
-          "description": "Aims to release specific tensions and prepare the body for physical activity. Helps in prevention and rehabilitation of muscle injuries."
-        },
-        {
-            "image":"lymphatic",
-            "name": "Lymphatic Drainage",
-            "description": "Massage technique that stimulates lymphatic system and drains the toxins, while strengthening the immune system. Lymphatic drainage helps to accelerate scarring and reduces the risk of infections. It would also be useful to treat conditions such as varicose veins, cellulites and venous insufficiency (heavy legs)."
-          },
-          {
-            "image":"pregnant",
-            "name": "Prenatal Massage",
-            "description": "Prenatal Massage offers relaxation tailored to your stage of pregnancy. Massage therapists will address the tension, aches, and pains caused by pregnancy to give expecting moms the gift of wellness they deserve—and need! This deep tissue massage calms the baby and dissipates stress, soothing sore muscles. It also improves lymphatic circulation to reduce swelling and discomfort. It is not recommended to start massage treatments prior 12 weeks of gestation, in order to diminish the risks for the fetus."
-          }
-      ]
+    "service3": {
+      "name": "Massage Sportif",
+      "description": "Le massage sportif s’adresse habituellement aux sportifs, mais pas uniquement aux athlètes professionnels .Vise à libérer des tensions précises et à préparer le corps aux activités physiques. Permet d’intervenir en prévention et réhabilitation des blessures musculaires."
     },
-    "promotions": {
-      "title": "Promotions Actuelles",
-      "description": "Réservez aujourd'hui et obtenez 10% de réduction sur votre premier massage!"
+    "service4": {
+      "name": "Drainage lymphatique",
+      "description": "Le drainage lymphatique est une technique de massage destinée à stimuler la circulation de la lymphe et à détoxiquer l'organisme, tout en renforçant le système immunitaire. La technique aide à accélère la cicatrisation et diminuer les risques d'infection. Il serait également utile pour traiter les problèmes, comme dans les cas de varices, de cellulite et d’insuffisance veineuse (jambes lourdes)."
     },
-    "contact": {
-      "title": "Contactez-nous",
-      "description": "Prenez rendez-vous maintenant"
+    "service5": {
+      "name": "Massage Prénatal",
+      "description": "Les manœuvres de ce massage sont adaptées à la femme enceinte en fonction de son stade de grossesse. Les massothérapeutes soulageront les zones douloureuses causées par les tensions du poids du corps afin d’offrir à la future maman tout le bien-être et la relaxation qu’elle se doit de recevoir avant l’accouchement. Ce massage calme le bébé, dissipe le stress du corps en offrant une belle profondeur, tout en apaisant les douleurs musculaires. Il agit sur la circulation lymphatique pour réduire le gonflement des tissus, pour vous offrir plus de confort dans vos mouvements. Il est fortement recommandé de commencer vos traitements de massothérapie après 12 semaines de grossesse, afin de diminuer les risques reliés au fœtus."
     }
-  }
+  },
+  "promotions": {
+    "title": "Promotions Actuelles",
+    "list": [
+      {
+        "key": "promo1",
+        "src": "leaf.jpg"
+      },
+      {
+        "key": "promo2",
+        "src": "coffee.jpg"
+      },
+      {
+        "key": "promo3",
+        "src": "bamboo.jpg"
+      }
+   
+    ],
+    "promo1": {
+      "title": "Les Nouveaux Clients",
+      "description": "10$ de rabais sur le 1er massage pour les nouveaux clients ",
+      "alt": "Les Nouveaux Clients"
+   
+    },
+    "promo2": {
+      "title": "Référez-nous un ami",
+      "description": "Referez nous à vos proches et profitez de 10$ de rabais sur votre prochain massage",
+      "alt": "Référez-nous un ami"
+    
+    },
+    "promo3": {
+      "title": "Certificat cadeau disponible",
+      "description": "Gâtez vos amies et vos proches ",
+      "alt": "Certificat cadeau"
   
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Prenez rendez-vous maintenant"
+  },
+  "rateus": {
+    "title": "Évaluez-nous",
+    "buttontext": "Soumettre un avis",
+      "placeholder": "Écrivez votre avis ici..."
+  }
+}

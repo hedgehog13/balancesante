@@ -1,16 +1,19 @@
 <section class="p-5 bg-light text-center" id="promotions">
   <div class="container">
     <div class="row">
-      <h2>Current Promotions</h2>
+      <h2>{{"promotions.title" | translate}}</h2>
       <hr class="mx-auto" style="width: 10%;"/>
       <div class="row justify-content-center">
-      <div class="col-lg-4" *ngFor="let image of promos$ | async">
+      <div class="col-lg-4" *ngFor="let promo of promos$ | async">
         <div class="card image-card">
-          <div class="card image-card" [ngStyle]="{'background-image': 'url(assets/images/promotions/' + image.src + ')'}">
+          <div class="card image-card" [ngStyle]="{'background-image': 'url(assets/images/promotions/' + promo.src + ')'}">
             <div class="card-body d-flex align-items-center text-white">
               <div  class="text-left w-100 text-left">
-                <h2 class="card-title">{{ image.title }}</h2>
-                <p class="card-text" style="text-align: left;">{{ image.description }}</p>
+                <!-- <h2 class="card-title">{{ image.title }}</h2>
+                <p class="card-text" style="text-align: left;">{{ image.description |translate}}</p> -->
+
+                <h2 class="card-title">{{  'promotions.' + promo.key + '.title' | translate }}</h2>
+                <p class="card-text" style="text-align: left;">{{ 'promotions.' + promo.key + '.description' | translate }}</p>
               </div>
             </div>
           </div>

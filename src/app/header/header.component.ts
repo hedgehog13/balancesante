@@ -21,7 +21,7 @@ export class HeaderComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const nav = document.querySelector('nav');
-  // Add 'scrolled' class when the scroll position is greater than 50 pixels
+
   if (window.scrollY > 50) {
     nav?.classList.add('scrolled');
   } else {

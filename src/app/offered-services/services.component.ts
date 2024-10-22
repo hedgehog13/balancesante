@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable, of } from 'rxjs';
+import { forkJoin, map, mergeMap, Observable, of } from 'rxjs';
 
 
 interface Service {
+  key:string
   name: string;
   description: string;
   image?:string
@@ -15,7 +16,7 @@ interface Service {
 })
 
 export class ServicesComponent {
-  services: Service[] = []; 
+
   services$: Observable<Service[]> = of([]); // Observable for services
   servicesTitle: string = '';
 
@@ -26,7 +27,19 @@ export class ServicesComponent {
 
 
     loadServices() {
-      this.services$ = this.translate.get('services.list');
+      this.services$ = this.translate.get('services.list').pipe(
+        mergeMap((services: Service[]) => {
+          return forkJoin(
+            services.map(service => this.translate.get(`services.${service.key}`))
+          ).pipe(
+            map(translations => services.map((service, index) => ({
+              ...service,
+              ...translations[index]
+            })))
+          );
+        })
+      );
+    
     }
 
   getLanguage() {

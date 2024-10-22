@@ -1,6 +1,6 @@
 <section id="rate-us " class="p-5 text-center bg-light">
     <div class="rating-container">
-        <h2>Rate Us</h2>
+        <h2>{{ "rateus.title" | translate }}</h2>
         <div class="stars">
           <span *ngFor="let star of stars; let i = index" 
                 class="star" 
@@ -9,8 +9,8 @@
             ★
           </span>
         </div>
-        <textarea [(ngModel)]="review" class="review-textarea" placeholder="Write your review here..."></textarea>
-        <button (click)="submitReview()" class="submit-button">Submit Review</button>
+        <textarea [(ngModel)]="review" class="review-textarea" [placeholder]="'rateus.placeholder' | translate"></textarea>
+        <button (click)="submitReview()" class="submit-button">{{ "rateus.buttontext" | translate }}</button>
       </div>
 
       <!-- <app-reviews></app-reviews> -->

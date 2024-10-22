@@ -5,10 +5,12 @@
     <div class="row justify-content-center">
       <div class="col-md-4" *ngFor="let service of services$ | async">
         <div class="service-card">
-            <img [src]="'assets/images/services/' + service.image + '.jpg'" alt="{{ service.name }}" class="img-fluid" />
+            <img [src]="'assets/images/services/' + service.image + '.jpg'" alt="{{ service.name | translate}}" class="img-fluid" />
             <div class="card-body">
-              <h3>{{ service.name }}</h3>
-              <p>{{ service.description }}</p>
+       
+
+              <h3>{{  'services.' + service.key + '.name' | translate }}</h3>
+              <p>{{ 'services.' + service.key + '.description' | translate }}</p>
             </div>
         </div>
       </div>
