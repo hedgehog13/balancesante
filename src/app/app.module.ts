@@ -15,7 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-appointment.component';
 import { FooterComponent } from './footer/footer.component';
 import { RateUsComponent } from './rate-us/rate-us.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
 import { ReviewsComponent } from './people-say/people-say.component';
 
@@ -43,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     HttpClientModule,  
     FormsModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

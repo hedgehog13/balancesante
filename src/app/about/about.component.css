@@ -2,7 +2,10 @@
     border-radius: 10px; /* Optional, for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Creates a soft shadow */
     transition: transform 0.3s ease-in-out; /* Adds smooth animation when hovered */
-    margin-top: 20px; /* Adjust for spacing if needed */
+    margin-top: 15px; /* Adjust for spacing if needed */
+    width: 60%;      /* Ensure the image takes the full width of its container */
+    height: auto;     /* Maintain the aspect ratio */
+    max-width: 100%
   }
   
   .styled-image:hover {

@@ -1,17 +1,73 @@
 <section id="rate-us " class="p-5 text-center bg-light">
-    <div class="rating-container">
-        <h2>{{ "rateus.title" | translate }}</h2>
-        <div class="stars">
-          <span *ngFor="let star of stars; let i = index" 
-                class="star" 
-                [class.filled]="i < rating" 
-                (click)="rate(i + 1)">
-            ★
-          </span>
+  <div class="container">
+    <h2 class="text-center mb-4">We'd Love Your Feedback</h2>
+
+    <form [formGroup]="reviewForm" (ngSubmit)="onSubmit()">
+      <!-- Name Field -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          formControlName="name"
+          placeholder="Enter your name"
+        />
+        <div
+          *ngIf="reviewForm.get('name')?.invalid && reviewForm.get('name')?.touched" class="text-danger">
+          Name is required
         </div>
-        <textarea [(ngModel)]="review" class="review-textarea" [placeholder]="'rateus.placeholder' | translate"></textarea>
-        <button (click)="submitReview()" class="submit-button">{{ "rateus.buttontext" | translate }}</button>
       </div>
 
-      <!-- <app-reviews></app-reviews> -->
+      <!-- Rating Field -->
+      <div class="mb-3">
+        <label>Rating</label>
+        <div class="stars">
+          <span *ngFor="let star of stars" (click)="selectRating(star)">
+            <i [class.filled]="star <= reviewForm.value.rating" class="star"
+              >★</i
+            >
+          </span>
+        </div>
+        <div
+          *ngIf="
+            reviewForm.get('rating')?.invalid && reviewForm.get('rating')?.touched
+          "
+        >
+          Rating is required
+        </div>
+      </div>
+      <!-- Feedback Field -->
+      <div class="mb-3">
+        <label for="feedback" class="form-label">Your Review</label>
+        <textarea
+          id="feedback"
+          class="form-control"
+          formControlName="feedback"
+          rows="4"
+          placeholder="Write a brief review"
+        ></textarea>
+        <div
+          *ngIf="
+            reviewForm.get('feedback')?.invalid &&
+            reviewForm.get('feedback')?.touched
+          "
+          class="text-danger"
+        >
+          Feedback must be at least 10 characters
+        </div>
+      </div>
+
+      <!-- Button to submit the review -->
+      <div class="text-center">
+        <button type="submit"  [disabled]="reviewForm.invalid" class="btn btn-primary">Submit on Google</button>
+      </div>
+
+      <!-- Note -->
+      <p class="text-center note mt-3">
+        By clicking submit, you will be redirected to Google to post your
+        review.
+      </p>
+    </form>
+  </div>
 </section>
