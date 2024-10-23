@@ -37,7 +37,7 @@ nav a:hover{
 
 nav.scrolled {
   background-color: white; 
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background when scrolled */
+  background-color: rgba(255, 255, 255, 0.9); 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 
 }
@@ -56,5 +56,36 @@ nav.scrolled .navbar-brand:hover{
 }
 nav.scrolled .navbar-brand{
   color: #04bb49;
+} /* */
+
+
+  /* Styles for mobile scrolled navbar */
+#mainNav.mobile-scrolled {
+  background-color: white; /* Set background color to white */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Optional: add a border */
 }
 
+#mainNav.mobile-scrolled .navbar-nav > li.nav-item > a.nav-link:hover {
+  color: #04bb49; /* Set hover color for links */
+}
+
+/* Additional styles for mobile view */
+@media (max-width: 991px) {
+  #mainNav {
+   background-color: white; /* Default for mobile */
+  }
+
+  #mainNav .mobile-scrolled {
+    background-color: white; /* Background color when scrolled */
+  }
+  #mainNav .navbar-brand,
+  #mainNav .mobile-scrolled .navbar-brand{
+    color: #04bb49;
+    font-size: 2em;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.mobile-scrolled .navbar-nav > li.nav-item > a.nav-link {
+    color: #212529; /* Set text color for links in mobile view */
+  }
+  
+}
